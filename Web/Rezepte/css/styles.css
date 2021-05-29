@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bg{
+    margin-top: 70px;
+    padding-top: 15px;
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+
+.bg-secondary {
+    background-color: rgba(200, 200, 200, 0.8) !important;
+}
+
+.border-info, .border-danger, .border-dark{
+    border-width: 4px;
+    border-radius: 9px;
+}
+
+.card-header, .card-body{
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.card-body {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul{
+    padding-left: 15px;
+}

@@ -1,0 +1,67 @@
+[
+    {
+        name : "Gin Hollabeer",
+        ingredients : ["Broker's Gin", "Holler-Himbeersirup", "Zitrone", "Apfelsaft"],
+        prep : ""    },
+    {
+        name : "London berry Mule",
+        ingredients : ["Broker's Gin", "Chambord", "Beeren", "Limette", "Zucker", "Ginger Beer", "Cranberry"],
+        prep : ""    },
+    {
+        name : "Pink Gin Fizz",
+        ingredients : ["Broker's Gin", "Grapefruit Limonade", "Zitrone", "Zucker", "Himbeere"],
+        prep : ""    },
+    {
+        name : "Hurricane",
+        ingredients : ["Brugal Añejo", "Maracuja", "Limette"],
+        prep : ""    },
+    {
+        name : "Paloma",
+        ingredients : ["Jose Cuervo 1800 Blanco", "Erdbeer Infusion", "Limette", "Grapefruit Limonade"],
+        prep : ""
+    },
+    {
+        name : "Lavender Gimlet",
+        ingredients : ["1 Bio-Zitrone", "8cl Lime Juice (Rose's)", "8cl Lavendelsirup","16cl Gin", "4 große Eiswürfel","Lavendelzweige zum Verzieren"],
+        prep : "4 Streifen spiralförmig von Zitrone abschälen, Saft auspressen, Rest verrühren"
+    },
+    {
+        name : "The Fruity",
+        ingredients : ["Tanquaray Ten Gin", "Grapefruit Limonade", "Beeren", "Grapefruit"],
+        prep : ""    },
+    {
+        name : "The Flowery",
+        ingredients : ["Broker's Gin", "Rosenwasser", "Slim Tonic", "Blüten", "Erdbeere"],
+        prep : ""
+    }, 
+    {
+        name : "Mojito",
+        ingredients : ["Eis", "Limette", "Brauner Zucker", "..."],
+        prep : ""
+    },
+    {
+        name : "Tequila Sunrise",
+        ingredients : ["Orangensaft", "Grenadine", "Tequila"],
+        prep : ""
+    },
+    {
+        name : "Orange Fizz",
+        ingredients : ["1/6 Orange", "Orangenscheibe", "Saft von 1/6 Zitrone", "40ml Gin","170ml kalter Orangensaft", "20ml Blue Curacao", "3-4 Cocktailkirschen", "65ml Mineralwasser", "1-2 Holzspießchen"],
+        prep : "Orange auspressen, Saft auffangen und mit Zitronensaft, Gin, Orangensaft und Curacao verrühren. Je 1 Orangenscheibe mit 3 Kirschen auf einen Spieß stecken, mit Mineralwasser aufgießen, in Gläser füllen und mit Fruchtspießen verzieren "
+    },
+    {
+        name : "Gin Gin Mule",
+        ingredients : ["4,5cl Gin", "6-8 Blätter Minze", "2,5cl Limettensaft", "3cl Zuckersirup", "3cl Ginger Beer", "Eiswürfel"],
+        prep : "Minze, Limettensaft und Zuckersirup in einen Shaker geben und muddeln, Eis und Gin hinzugeben und kräftig shaken, double-strain in ein Highball-Glas abseihen, mit Ginger Beer auffüllen"
+    },
+    {
+        name : "Tom Collins",
+        ingredients : ["5cl Old Tom Gin", "3cl Zitronensaft", "2cl Zuckersirup", "Eiswürfel"],
+        prep : ""
+    },
+    {
+        name : "Bramble",
+        ingredients : ["5cl Gin", "2cl Zitronensaft", "1cl Zuckersirup", "4-5 Brombeeren", "Eiswürfel"],
+        prep : "Brombeeren in den Tumbler geben und mit einem Stößel leicht zerdrücken. Den Tumbler mit Crushed Ice füllen. Rest dazu."
+    }
+]
