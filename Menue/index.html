@@ -1,0 +1,860 @@
+<!--TODO:
+    1. Bei normalen Rezepten Zutaten und Rezept NEBENeinander
+    2. Bei Saucen Bild neben die Zutaten
+-->
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="utf-8">
+   <title>Menü</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+   <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+<!--Menü-->
+<header id="header" class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-4 offset-md-4 text-center menue">
+            <h1 class="text-center">Menü</h1>
+            <h3>Vorspeisen:</h3>
+            <ul>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Avocado-Thunfisch-Salat</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Beef Tartare</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Bruschetta</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Caprese</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Carpaccio</a></li>
+            </ul>
+            <h3>Vor-/Hauptspeisen</h3>
+            <ul>
+                <li><a href="#VH-Cevich">Ceviche</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Frühlingsrollen</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Vitello Tonnato</a></li>
+            </ul>
+            <h3>Hauptspeisen</h3>
+            <ul>
+                <li>
+                    <h4>Beilagen</h4>
+                    <ul>
+                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider kein Rezept vorhanden">Bratkartoffeln</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Couscous</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Nudeln</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Ofenkartoffel</a></li>
+                        <li><a href="#H-Pita">Pita</a></li>
+                        <li><a href="#H-Po-Rei">Poke-Reis</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Reis</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Salat</a></li>
+                        <li><a href="#H-Se-Kno">Semmelknödel</a></li>
+                        <li><a href="#H-Spaetz">Spätzle</a></li>
+                        <li><a href="#H-Zi-Sal" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">*Zitrusfrüchtesalat</a></li>
+                        <li><a href="#H-Zoodle" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Zoodles</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <h4>Hauptdings</h4>
+                    <ul>
+                        <li><a href="#H-Bologne">Bolognese</a></li>
+                        <li><a href="#H-Ch-Wing" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Chicken Wings</a></li>
+                        <li><a href="#H-Cl-Sand" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Club Sandwich</a></li>
+                        <li><a href="#H-Falafel" >Falafel</a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Hühnchen-Poke</a></li>
+                        <li><a href="#H-Lasagne">Lasagne</a></li>
+                        <li><a href="#H-Rindsba">Rindsbackerl</a></li>
+                        <li><a href="#H-Rindsro">Rindsrouladen</a></li>
+                        <li><a href="#H-Schnitz" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Schnitzel</a></li>
+                        <li><a href="#H-Shr-Sau" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Shrimps-Paradeiser-Sauce</a></li>
+                        <li><a href="#H-One-SL">Schweinslungenbraten mit Gemüsepüree</a></li>
+                        <li><a href="#H-Speckli">Specklinsen</a></li>
+                        <li><a href="#">Steak (egal ob Fisch/Fleisch)</a></li>
+                        <li><a href="#H-Fis-Pok" data-toggle="tooltip" data-placement="right" title="Rezept kommt bald">Thunfisch/Lachs-Poke</a></li>
+                        <li><a href="#H-Tun-Tat">Tuna Tataki-</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Haupt-/Nachspeisen</h3>
+            <ul>
+                <li><a href="#HN-Flammk" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Flammkuchen</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">überbackene Nachos</a></li>
+            </ul>
+            <h3>Nachspeisen</h3>
+            <ul>
+                <li><a href="N-Browni">Brownies</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Eis</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Mousse au Chocolate</a></li>
+                <li><a href="#N-Sch-kue">Schokoküchlein</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Sorbet</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Sticky Rice</a></li>
+            </ul>
+            <h3>Suppen</h3>
+            <ul>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Huhn</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Knoblauch</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Kohlrabi</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Rind</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Zucchini</a></li>
+            </ul>
+            <h3>Saucen</h3>
+            <ul>
+                <li><a href="#Sa-Bastard" >Sauce Bastard</a></li>
+                <li><a href="#Sa-Bearnai">Sauce Béarnaise</a></li>
+                <li><a href="#Sa-Bechame">Béchamel</a></li>
+                <li><a href="#Sa-Bourgui">Sauce Bourguinonne</a> </li>
+                <li><a href="#Sa-Chimich">Chimichurri</a> </li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">dunkle Grundsauce</a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Leider noch kein Rezept vorhanden">Sauce Hollandaise</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<div id="totop">
+    <a href="#header"><button class="btn btn-lg bg-info">&uparrow;</button></a>
+</div>
+
+<main class="container-fluid">
+    <!--Vorspeise-->
+    <section id="vorsp" class="d-none">
+        <h2>Vorspeisen</h2>
+        <article id="V-Av-Th-Sal" class="col-md-8 offset-md-2">
+            <h3>Avocado-Thunfisch-Salat</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </article>
+        <article id="V-Be-Tat" class="col-md-8 offset-md-2">
+            <h3>Beef Tartatre</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </article>
+        <article id="V-Brusch" class="col-md-8 offset-md-2">
+            <h3>Bruschetta</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </article>
+        <article id="V-Capres" class="col-md-8 offset-md-2">
+            <h3>Caprese</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </article>
+        <article id="V-Carpac" class="col-md-8 offset-md-2">
+            <h3>Carpaccio</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </article>
+    </section>
+    <!--Vor/Hauptspeise-->
+    <section id="vor_hauptsp" >
+        <h2 class="text-center">~ Vor-/Hauptspeisen ~</h2>
+        <article id="VH-Cevich" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Ceviche</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+
+
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Roher Lachs</li>
+                    <li>Limettensaft</li>
+                    <li>Koriander</li>
+                    <li>Chili(pulver)</li>
+                    <li>Jungzwiebel</li>
+                    <li>(+ was noch passt: zB. <ul><li>Maracuja,</li><li>Avocado, </li><li>Mango(-saft), </li><li>rohe, fein geschnittene Süßkartoffel</li><li>…)</li></ul></li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>
+                        Limettensaft, Koriander, Chili, Jungzwiebel und andere Gewürze vermischen, Lachs würfeln, mit allen restlichen Zutaten ins „Dressing“ geben und für ~5min marinieren lassen(sollte leicht die Farbe verändern). Dann mit „Dressing“ servieren
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article id="VH-Fr-Rol" class="row d-none">
+            <div class="rec-head">
+                <h3>Frühlingsrolle</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li></li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article id="VH-Vi-Tom" class="row d-none">
+            <div class="rec-head">
+                <h3>Vitello Tonnato</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li></li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--Hauptspeise-->
+    <section id="hauptsp" class="">
+        <h2 class="text-center">~ Hauptspeisen ~</h2>
+        <h4>Beilagen</h4>
+        <article id="H-Bratka" class="row d-none">
+            <div class="rec-head">
+                <h3>Bratkartoffeln</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li></li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Cousco" class="row d-none">
+            <div class="rec-head">
+                <h3>Couscous</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li></li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Ofenka" class="row d-none">
+            <div class="rec-head">
+                <h3>Ofenkartoffeln</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li></li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Pita" class="row sec-gg">
+            <div class="rec-head">
+                <h3 class="text-center">Pita</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:(4 Portionen)</h6>
+                    <li>500g Mehl (glatt)</li>
+                    <li>300ml Wasser</li>
+                    <li>20ml Öl</li>
+                    <li>1pkg Trockenhefe(Germ)</li>
+                    <li>Salz</li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Alles mischen und ca 10min gut verkneten(Maschine).</p>
+                    <p>30min gehen lassen(warmer Ort). Nochmal gut durchkneten und in gleich große Stücke Teilen, ½ cm dick ausrollen und auf ein mit Backpapier belegtes Backblech legen.</p>
+                    <p>Abdecken und nochmal 30min gehen lassen.</p>
+                    <p>Backofen auf 210° vorheizen.</p>
+                    <p>Ca 8min oder bis sie in der Mitte braun sind backen.</p>
+
+                </div>
+            </div>
+        </article>
+        <article id="H-Po-Rei" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Poke-Reis</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Reis (am besten vom Vortag)</li>
+                    <li>Reisessig</li>
+                    <li>Zucker</li>
+                    <li>Kokosöl</li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>
+                        Reis mit ausreichend Zucker und Essig vermengen, Kokosöl in der Pfanne schmelzen, Reis in die Pfanne und abraten, bis er karamellisiert ist, dann wie eine Palatschinke wenden.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Se-Kno" class="row sec-gg">
+            <div class="rec-head">
+                <h3 class="text-center">Semmelknödel</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>200g Semmelwürfel (oder 5 altbackene Semmeln)</li>
+                    <li>1 Zwiebel</li>
+                    <li>1 Bund Petersilie</li>
+                    <li>1EL Schweineschmalz</li>
+                    <li>3 Eier</li>
+                    <li>3EL glattes Mehl</li>
+                    <li>200ml Milch</li>
+                    <li>Muskatnuss</li>
+                    <li>Salz, Pfeffer</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Semmelwürfel mit den Eiern vermengen und mit Milch vermengen. Mit Salz, Pfeffer und Muskatnuss würzen. Masse gut zusammendrücken.</p>
+                    <p>Petersilie waschen, Blättchen von den Stielen zupfen und fein schneiden. Zwiebeln anschwitzen, Petersilie zufügen und alles durch rühren. Gemeinsam mit dem Mehl in die Semmelmasse einrühren und mit den Gewürzen abschmecken. Falls erforderlich noch etwas Milch zufügen. Masse ein paar Minuten rasten lassen. Aus der Semmelmasse kleine Knödel formen und in kochendes Salzwasser einlegen. Hitze reduzieren und die Knödel zugedeckt im leicht wallenden Wasser ca. 10 Minuten gar ziehen lassen.</p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Spaetz" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Spätzle</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>125g Mehl</li>
+                    <li>2 Eier</li>
+                    <li>4 El Wasser</li>
+                    <li>Salz</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Alle Zutaten vermengen und (mit den Fingern) so lange schlagen, bis es Blasen wirft.</p>
+                    <p>Dann Wasser zum kochen bringen, gut salzen und Spätzle rein schaben. </p>
+                    <p>Wenn sie oben schwimmen, sind sie fertig</p>                </div>
+            </div>
+        </article>
+        <article id="H-Zi-Sal" class="row sec-gg">
+            <div class="rec-head">
+                <h3 class="text-center">Zitrusfrüchtesalat</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Orange</li>
+                    <li>Mandarine</li>
+                    <li>Zitronensaft</li>
+                    <li>Zucker oder Honig</li>
+                    <li>Grapefruit, oder anderes passendes Obst...</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Alles schneiden und mit Zitronensaft und Zucker marinieren, gleich servieren.</p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Zoodle" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Zoodles</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Zucchini(s)</li>
+                    <li>Zitronensaft oder Essig</li>
+                    <li>heißes Wasser</li>
+                    <li>Salz</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Zucchini in Spaghetti- oder Bandnudel-Form schneiden. Kurz in Essig wälzen, bis sie ganz bedeckt sind, dann 1-2 min in sehr heißes Wasser legen.</p>
+                    <p>Falls sie als Pasta verwendet werden, am besten am Ende zur Sauce in die Pfanne geben und dann servieren.</p>
+                </div>
+            </div>
+        </article>
+        <h4>Haupdings</h4>
+        <article id="H-Bologne" class="row sec-gg">
+            <div class="rec-head">
+                <h3 class="text-center">Bolognese</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Olivenöl</li>
+                    <li>Zwiebel</li>
+                    <li>Karotten</li>
+                    <li>Faschiertes</li>
+                    <li>Paradeiser (ganze aus der Dose zb)</li>
+                    <li>Rotwein</li>
+                    <li>Paprikapulver, Oregano, Lorbeer</li>
+                    <li>Salz, Pfeffer...</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Karotten, Zwiebel und Faschiertes anrösten, mit Wein ablöschen, dann Tomaten dazu und dann minimum 3/4h kochen lassen.</p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Ch-Wing" class="row sec-gg d-none">
+            <div class="rec-head">
+                <h3 class="text-center">Chicken Wings</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Hühnerflügel</li>
+                    <li>Mehl</li>
+                    <li>Olivenöl</li>
+                    <li>Paprikapulver</li>
+                    <li>Brathendlgewürz</li>
+                    <li>Salz</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>...</p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Cl-Sand" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Club Sandwich</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Toast</li>
+                    <li>Hühnerbrust oder ausgelöste Schenkel</li>
+                    <li>Tomaten</li>
+                    <li>Salat</li>
+                    <li>Speck</li>
+                    <li><a href="#S-Chip" >Chipotle</a> oder <a href="#S-Cock">Cocktailsauce</a></li>
+                    <li>(gekochtes Ei)</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Huhn anbraten, Toast toasten, unten mit Salat und oben mit Sauce anfangen, dann alles hinzufügen und servieren.</p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Falafel" class="row sec-gg">
+            <div class="rec-head">
+                <h3 class="text-center">Falafel</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>200g getrocknete Kichererbsen</li>
+                    <li>1 Zwiebel</li>
+                    <li>2EL gehackte Petersilie</li>
+                    <li>2EL gehackter Koriander</li>
+                    <li>1TL Salz</li>
+                    <li>1/2TL mildes Chilipulver</li>
+                    <li>4 Knoblauchzehen</li>
+                    <li>1TL Kreuzkümmel</li>
+                    <li>1TL Backpulver</li>
+                    <li>Mehl</li>
+                    <li>Neutrales Pflanzenöl zum Frittieren</li>
+                </ul>
+                <div>
+                    <h6>Vorbereitung:</h6>
+                    <p>Kichererbsen ca 2cm hoch mit Wasser bedeckt für 12h einweichen lassen</p>
+
+                    <h6>Zubereitung:</h6>
+                    <p>Zwiebel und Knoblauch fein hacken. Die Hälfte der Zwiebelwürfel mit den abgetropften Kichererbsen im Food Processor fein hacken. Mit Petersilie, Koriander, Salz, Chilipulver, Knoblauch und Kreuzkümmel vermischen.
+                        Als nächstes Backpulver und 4EL Mehl untermischen. Mehr Mehl untermischen, falls die Masse noch an den Händen klebt, etwa Wallnussgroße Bällchen formen.
+
+                        Falafel in ausreichend Öl goldbraun Frittieren.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Lasagne" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Lasagne</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li><a href="#H-Bologne">Bolognese</a></li>
+                    <li><a href="#Sa-Bechame"></a></li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Huhn anbraten, Toast toasten, unten mit Salat und oben mit Sauce anfangen, dann alles hinzufügen und servieren.</p>
+                </div>
+            </div>
+        </article>
+        <article id="H-Rindsba" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Geschmorte Rindsbackerl</h3>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>3 Rindsbackerl</li>
+                    <li>40g Butter</li>
+                    <li>400g Rindsknochen</li>
+                    <li>2 Karotten</li>
+                    <li>2 Stangensellerie</li>
+                    <li>2 Zwiebeln</li>
+                    <li>2l Rotwein</li>
+                    <li>1EL Tomatenmark</li>
+                    <li>1 Thymianzweig</li>
+                    <li>1 Rosmarinzweig</li>
+                    <li>1 Gewürznelke</li>
+                    <li>8 Pfefferkörner</li>
+                    <li>2 Knoblauchzehen</li>
+                    <li>4 Schalotten</li>
+                    <li>Meersalz,Pfeffer, Gartenkresse</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung: </h6>
+                    <p>Die Backerl mit Salz und Pfeffer würzen und in Butter rundum anbraten. Das Gemüse in Stücke schneiden, dazugeben und mit Tomatenmark kurz mitrösten. Dann mit 3/4 des Rotweins aufgießen. Parallel die Rindfleischknochen im Rohr rösten und in den Fond geben. Aufkochen und dabei den aufsteigenden Schaum abschöpfen. Gewürze und Kräuter dazugeben und mit Backpapier abgedeckt am Herd ca. 2 Stunden schmoren. Anschließend das Fleisch aus dem Fond heben und mit Klarsichtfolie abdecken. Die Schalotten inButter anschwitzen, mit Balsamico und dem restlichen Rotwein ablöschen und mit Rindsfond aufgießen. Dann stark reduzieren.</p>
+
+                </div>
+            </div>
+        </article>
+        <article id="H-Rindsro" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Rindsrouladen</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Pastinaken</li>
+                    <li>Zwiebel</li>
+                    <li>Schalotten</li>
+                    <li>Sellerie</li>
+                    <li>Speck</li>
+                    <li>Pilze(Stein/oder Shiitake)</li>
+                    <li>Knoblauch</li>
+                    <li>Tomatenpüree</li>
+                    <li>Butter</li>
+                    <li>Korianderkörner</li>
+                    <li>Rotwein</li>
+                    <li>Soyasauce</li>
+                    <li>Senf</li>
+                    <li>Karotten</li>
+                    <li>Rindschnitzel o.ä.</li>
+                    <li>Essiggurken</li>
+                    <li>Speck</li>
+                    <li>Mehl</li>
+                    <li>Salz, Pfeffer, Lorbeerblatt</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>Pastinaken, Zwiebel, Schalotten, Speck, Sellerie, Pilze würfeln und rösten. Tomatenpüree, Butter, Korianderkörner dazu, weiterrösten, Rotwein(+Soyasauce) dazu und kurz köcheln lassen.</p>
+                    <p>Währenddessen Rouladen machen: auf einer Seite slzen und pfeffern, auf der anderen mit Senf beschmieren, Speck drauf, in Streifen geschnittene Essiggurken und Karotten drauf, fest einrollen und mit Zahnstocher oder Schnur schließen.</p>
+                    <p>Rouladen außen leicht mehlen, dann extra anbraten, zum Rest dazu, Pfanne mit Wasser ablöschen und Flüssigkeit zum Rest dazu.</p>
+                    <p>Bei ca. 160°C ungefähr 1Std. im Ofen schmoren.</p>
+                </div>
+            </div>
+        </article>
+        <article id="H-One-SL" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Schweinslungenbraten mit Gemüsepüree</h3>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>1 Schweinslungenbraten</li>
+                    <li>1-2 große Pastinaken</li>
+                    <li>mehrere Karotten</li>
+                    <li>Pilze</li>
+                    <li>1 "Blatt" Stangensellerie</li>
+                    <li>1 Zwiebel oder Jungzwiebel</li>
+                    <li>1/3 mittlerer Knollensellerie</li>
+                    <li>250ml Gemüsesuppe oder Suppenwürfel</li>
+                    <li>ein paar Knoblauchzehen</li>
+                    <li>Meersalz, Pfeffer, Öl</li>
+
+                </ul>
+                <div>
+                    <h6>Zubereitung: </h6>
+                    <p>Gemüse in ca. 1/2-1cm Stücke schneiden, mit etwas Salz und öl würzen und in die Kasserole geben. Lungenbraten zuputzen, salzen, pfeffern, einölen und auf das Gemüse legen. So viel Suppe einfüllen, dass das Gemüse knapp nicht bedeckt ist.</p>
+                    <p>Bei 180-200° in den Ofen schieben bis das Fleisch fast durch aussieht (je nach größe ~30min). Dann Pastinaken, Karotten, Stangensellerie, Sellerie und etwas Zwiebel herausnehmen und pürieren, eventuell nochmal extra erwärmen. Lungenbraten aufschneiden und mit Püree und restlichem Gemüse anrichten.</p>
+                </div>
+            </div>
+        </article>
+
+
+    </section>
+    <!--Haupt/Nachspeise-->
+    <section id="haupt_nachsp" >
+        <article id="HN-Flammk" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Flammkuchen</h3>
+            </div>
+
+            <div class="col-md-8 offset-md-2">
+
+
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>Mehl (ca. 2x so viel wie Wasser)</li>
+                    <li>Wasser</li>
+                    <li>1-2EL Olivenöl</li>
+                    <li>Sauerrahm</li>
+                    <li>Creme Fraiche</li>
+                    <li>Jungzwiebel</li>
+                    <li>(+ was noch passt: zB. <ul><li>Speck,</li><li>Zwiebel, </li><li>Paprika, </li><li>…)</li></ul></li>
+                </ul>
+                <div>
+                    <h6>Zubereitung:</h6>
+                    <p>
+                        Mehl, Wasser, Öl verrühren und kneten. Im besten Fall 10-30min rasten lassen. So dünn wie möglich ausrollen, mit Sauerrahm-Creme Fraiche-Mischung beschmieren und mit restlichen Zutaten belegen. Für ca 10min bei 160° in den Ofen.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+    </section>
+    <!--Nachspeise-->
+    <section id="nachsp">
+        <article id="N-Browni" class="row">
+            <div class="rec-head">
+                <h3 class="text-center">Brownies</h3>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <ul>
+                    <h6>Zutaten:</h6>
+                    <li>200g Kristallzucker</li>
+                    <li>200g brauner Zucker</li>
+                    <li>3 Eier (Raumtemperatur)</li>
+                    <li>75g Kakaopulver</li>
+                    <li>120g Mehl</li>
+                    <li>6g Salz</li>
+                    <li>260g Schokostückchen</li>
+                    <li>225g flüssige Butter</li>
+                    <li>15ml Kaffee</li>
+                    <li>15ml Vanilleextrakt</li>
+
+                </ul>
+            <div>
+                <h6>Zubereitung: </h6>
+                <p>Backofen auf ~180° vorheizen und 20x20 cm Backblech mit Backpapier auslegen</p>
+                <p>In einer großen Schüssel Butter, Eier, Vanilleextrakt und Kaffee gut verrühren</p>
+                <p>Weißen und braunen Zucker unterrühren</p>
+                <p>Kakaopulver, Mehl und Salz einrühren</p>
+                <p>Schokostückchen in den Teig geben und einarbeiten</p>
+                <p>Ca 30min backen (oder wenn die Mitte nicht mehr wackelt wenn man die Form bewegt)</p>
+
+            </div>
+        </div>
+    </article>
+
+    </section>
+    <!--Suppe-->
+    <section id="suppen"></section>
+    <!--Sauce-->
+    <section id="saucen">
+        <h2 class="text-center">~ Saucen ~</h2>
+        <article class="row row-cols-1 row-cols-md-2">
+            <div id="Sa-Bastard" class="col mb-4"> <!--Bastard-->
+                <div class="card bg-transparent text-white">
+                    <!--<img src="..." class="card-img-top" alt="...">-->
+                    <div class="card-header text-center"><h3>Sauce Bastard</h3></div>
+                    <div class="card-body">
+                        <!--<h3 class="card-title text-center">Sauce Bastard</h3>-->
+                        <ul><h6>Zutaten</h6>
+                            <li>¼ l Wasser</li>
+                            <li>½ TL Instant-Suppe </li>
+                            <li class="no-bullet">oder ¼ l Gemüse/Fischsuppe</li>
+                            <li>1EL Butter gestrichen</li>
+                            <li>1EL Mehl gestrichen</li>
+                            <li>Salz, Pfeffer</li>
+                            <li>1-2TL Zitronensaft</li>
+                            <li>1 Eigelb</li>
+                            <li>1EL Obers</li>
+                            <li>2 gehäufte EL Butter</li>
+                        </ul>
+                        <p class="card-text">Wasser mit Instant-Suppe oder Gemüsesuppe aufkochen. Butter langsam schmelzen, Mehl teelöffelweise einrühren. Rühren, bis eine homogene Masse entsteht. Löffelweise unter rühren die Suppe beimengen. Bei schwacher Hitze unter ständigem Rühren 5min kochen lassen. Mit Salz, Pfeffer und Zitronensaft abschmecken. Eigelb mit Obers verquirlen, dann in die Sauce einrühren, Erhitzen, aber nicht kochen lassen. Vom Herd nehmen und 2 gehäufte EL kräftig unterrühren.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Passt gut zu: ...</small>
+                    </div>
+                </div>
+            </div><!--Bastard-->
+            <div id="Sa-Bearnai" class="col mb-4"><!--Béarnaise-->
+                <div class="card">
+                    <!--<img src="..." class="card-img-top" alt="...">-->
+                    <div class="card-header text-center"><h3>Sauce Béarnaise</h3></div>
+                    <div class="card-body">
+                        <!--<h3 class="card-title text-center">Sauce Béarnaise</h3>-->
+                        <ul><h6>Zutaten</h6>
+                            <li>2 kleine Schalotten </li>
+                            <li>2EL Estragonessig</li>
+                            <li>3 zerdrückte Pfefferkörner</li>
+                            <li>1TL Fleischextrakt</li>
+                            <li>1EL Wasser</li>
+                            <li>100g Butter</li>
+                            <li>3 Eigelbe</li>
+                            <li>1EL warmes Wasser</li>
+                            <li>1TL gehackter Estragon</li>
+                            <li>1TL gehackter Kerbel</li>
+                            <li>Salz, Cayennepfeffer</li>
+
+                        </ul>
+                        <p class="card-text">Schalotten schälen und hacken. Mit Estragonessig, Pfefferkörnern und in Wasser aufgelöstem Fleischextrakt aufkochen. So lange leicht sieden lassen, bis Schalotten glasig sind und nur mehr ca. 2EL Flüssigkeit vorhanden sind. Flüssigkeit durchsieben.
+                            Währenddessen Butter langsam schmelzen.
+                        </p>
+                        <p>
+                            Eigelbe mit warmen Wasser verquirlen und über Wasserbad cremig rühren. Geschmolzene Butter nach und nach teelöffelweise zum Eigelb geben. Auch die Schalottenflüssigkeit unter rühren hinzufügen. Aus dem Wasserbad nehmen, mit restlichen Gewürzen abschmecken
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Passt gut zu: ...</small>
+                    </div>
+                </div>
+            </div><!--Béarnaise-->
+            <div id="Sa-Bechame" class="col mb-4"><!--Béchamel-->
+                <div class="card">
+                    <!--<img src="..." class="card-img-top" alt="...">-->
+                    <div class="card-header text-center"><h3>Sauce Béchamel</h3></div>
+
+                    <div class="card-body">
+                       <!-- <h3 class="card-title text-center">Sauce Béchamel</h3>-->
+                        <ul><h6>Zutaten</h6>
+                            <li>100g Mehl</li>
+                            <li>100g Butter</li>
+                            <li>1L Milch</li>
+
+                        </ul>
+                        <p class="card-text">
+                            Einbrenn machen, nach Zugabe der Milch unbedingt aufkochen(ca. 5 min) bis der Mehlgeschmack weg und die Sauce dickflüssig ist.
+                            (f. Lasagne (v.Trettl)
+                        </p>
+                        <hr>
+                        <ul><h6>Zutaten</h6>
+                            <li>2-1 Zwiebel</li>
+                            <li>1 gehäufter EL Butter</li>
+                            <li>2 gehäufte EL Mehl</li>
+                            <li>1/8 l heiße Kalbsfleischsuppe</li>
+                            <li>1/8 l heiße Milch</li>
+                            <li>Salz, Pfeffer, Muskatnuss, Schnittlauch</li>
+
+                        </ul>
+                        <p>Zwiebel würfeln, Butter erhitzen, Zwiebeln glasieren aber nicht braun werden lassen. Mehl unter rühren hinzufügen. Anschwitzen lassen. Mit Suppe aufgießen, aufkochen. Heiße Milch hinzufügen und nochmal aufkochen. Abschmecken, durchsieben und mit Schnittlauch servieren.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Passt gut zu: Lasagne</small>
+                    </div>
+                </div>
+            </div><!--Béchamel-->
+            <div id="Sa-Bourgui" class="col mb-4"> <!--Bourguinonne-->
+                <div class="card bg-transparent text-white">
+                    <!--<img src="..." class="card-img-top" alt="...">-->
+                    <div class="card-header text-center"><h3>Sauce Bourguinonne</h3></div>
+                    <div class="card-body">
+                        <!--<h3 class="card-title text-center">Sauce Bastard</h3>-->
+                        <ul><h6>Zutaten</h6>
+                            <li>2 Schalotten</li>
+                            <li>¾ l roter Burgunderwein</li>
+                            <li>1 Zweig Thymian</li>
+                            <li>¼ Lorbeerblatt</li>
+                            <li>1 prise Zucker</li>
+                            <li>3 Stengel Petersilie</li>
+                            <li>50g Champignons</li>
+                            <li>3 gestrichene EL Butter</li>
+                            <li>3 gestrichene EL Mehl</li>
+                            <li>1 prise Zucker</li>
+                            <li>1 prise Cayennepfeffer</li>
+                            <li>Salz</li>
+
+                        </ul>
+                        <p class="card-text">Schalotten schälen und fein hacken. Wein aufkochen, Schalotten, Thymian, Lorbeerblatt, Zucker und Petersilie dazugeben. Champignons putzen schneiden. Hälfte davon hinzufügen, ca 10min kochen, bis die Flüssigkeit ca um die Hälfte reduziert ist. Durch ein Sieb in einen Topf passieren. 1EL Butter mit Mehl verkneten und einrühren. Restliche Champignons dazu und gut durchkochen. Mit restlichen Gewürzen abschmecken. Restliche Butter mit Schneebesen in die Sauce schlagen.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Passt gut zu: ...</small>
+                    </div>
+                </div>
+            </div><!--Bourguinonne-->
+            <div id="Sa-Chimich" class="col mb-4"> <!--Bourguinonne-->
+                <div class="card bg-transparent text-white">
+                    <!--<img src="..." class="card-img-top" alt="...">-->
+                    <div class="card-header text-center"><h3>Chimichurri</h3></div>
+                    <div class="card-body">
+                        <!--<h3 class="card-title text-center">Sauce Bastard</h3>-->
+                        <ul><h6>Zutaten</h6>
+                            <li>ca 30g Petersilie</li>
+                            <li>Schalotte</li>
+                            <li>4 Knoblauchzehen</li>
+                            <li>1 TL getr. Oregano</li>
+                            <li>1 kleine rote chilli oder Paprika</li>
+                            <li>ca 45ml Rotweinessig</li>
+                            <li>gemahlener Schwarzer Pfeffer</li>
+                            <li>ca 150ml Olivenöl</li>
+                            <li>Salz</li>
+
+                        </ul>
+                        <p class="card-text">Alles trockene in den Häcksler, zerkleinern, bis eher kleine Stücke übrig sind (keine Paste!!!), dann mit Essig und Öl vermengen.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Passt gut zu: Steak, allem Südamerikanischen</small>
+                    </div>
+                </div>
+            </div><!--Chimichurri-->
+
+        </article>
+    </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
