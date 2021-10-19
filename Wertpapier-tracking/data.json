@@ -1,0 +1,22 @@
+  {
+  "daten": [
+    {
+      "date": "20.10.2021",
+      "gesamt": 14534.21,
+      "anleihe1": 4000,
+      "anleihe2": 3000,
+      "fair invest": 218.34,
+      "future invest": 3198.10,
+      "green invest" : 4117.77
+    },
+    {
+      "date": "21.10.2021",
+      "gesamt": 14534.21,
+      "anleihe1": 4000,
+      "anleihe2": 3000,
+      "fair invest": 218.34,
+      "future invest": 3198.10,
+      "green invest" : 4117.77
+    }
+  ]
+}
