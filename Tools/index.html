@@ -1,27 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
 
-    <title>Tools</title>
-  </head>
-  <body>
-    <h1>Tools</h1>
+  <title>Tools</title>
+</head>
+<body>
+<h1>Tools</h1>
+<div class="container">
+  <div class="row" id="contents">
+  </div>
+</div>
+<script>
+  var json = '{\n' +
+          '  "tools" : [\n' +
+          '    {\n' +
+          '      "name" : "Bootstrap",\n' +
+          '      "kurzB" : "CSS Framework",\n' +
+          '      "langB" : "Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.",\n' +
+          '      "text" : "Hi, das ist ein Text",\n' +
+          '      "tags" : [\n' +
+          '        "css",\n' +
+          '        "html",\n' +
+          '        "javascript",\n' +
+          '        "sass",\n' +
+          '        "web"\n' +
+          '      ],\n' +
+          '      "img" : "https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-32x32.png"\n' +
+          '    },\n' +
+          '    {\n' +
+          '      "name" : "Tailwind",\n' +
+          '      "kurzB" : "CSS Framework",\n' +
+          '      "langB" : "Rapidly build modern websites without ever leaving your HTML.",\n' +
+          '      "text" : "",\n' +
+          '      "tags" : [\n' +
+          '        "css",\n' +
+          '        "html",\n' +
+          '        "javascript",\n' +
+          '        "npm",\n' +
+          '        "sass",\n' +
+          '        "web"\n' +
+          '      ],\n' +
+          '      "img" : "https://tailwindcss.com/favicon-32x32.png"\n' +
+          '    }\n' +
+          '  ]\n' +
+          '}';
+</script>
+<script>
+  var obj = JSON.parse(json);
+  var i = 1;
+  let contents = "";
+  for (tool of obj.tools) {
+    contents += '<div class="col-3" onclick="show(\'' + tool.text + '\')"><h3>'+ tool.name +'<img src="'+ tool.img +'" width="25px"> </h3><strong>'+ tool.kurzB +'</strong><div>';
+    for (tag of tool.tags){
+      contents += '<span class="badge rounded-pill bg-light text-info me-1">' + tag + '</span>';
+    }
+    contents += '</div><p>'+ tool.langB +'</p></div>';
+  };
+  document.getElementById('contents').innerHTML = contents;
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  function show(text) {
+    alert(text);
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </body>
+</body>
 </html>
